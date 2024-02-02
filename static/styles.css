@@ -1,0 +1,62 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f2f7fd; /* Fondo azul claro */
+    font-family: 'Arial', sans-serif;
+    flex-direction: column; /* Cambiado para tener dirección vertical */
+}
+
+form {
+    text-align: center;
+    background-color: #ffffff; /* Fondo blanco */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sutil sombra */
+    margin-top: 20px; /* Agregado para separar del post-it */
+}
+
+label {
+    font-size: 18px;
+    color: #3a3a3a; /* Texto gris oscuro */
+}
+
+input {
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #a1a1a1; /* Borde gris */
+    border-radius: 5px;
+    width: 100%;
+}
+
+button {
+    font-size: 18px;
+    background-color: #007bff; /* Azul brillante */
+    color: #ffffff; /* Texto blanco */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3; /* Azul más oscuro al pasar el ratón */
+}
+
+p {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #ff0000; /* Texto rojo para mensajes de error */
+}
+
+.post-it {
+    background-color: #ffec80; /* Amarillo claro para simular un post-it */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px; /* Agregado para espacio entre el post-it y el formulario */
+    width: 300px; /* Ancho fijo del post-it */
+}
