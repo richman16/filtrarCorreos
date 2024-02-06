@@ -1,11 +1,11 @@
-﻿ColumnaX,ColumnaY
-A,1
-B,2
-ColumnaX,3
-D,4
-E,5
-F,6
-G,7
-H,8
-I,9
-J,10
+﻿Alumnos,PadreNombre,PadreApellidoP,PadreApellidoM,PadreCorreo,MadreNombre,MadreApellidoP,MadreApellidoM,MadreCorreo
+Alumno 01,Papa01,PapaAP01,PapaAM01,padre01@dominio.com,Mama01,MamaAP01,MamaAM01,madre01@dominio.com
+Alumno 02,Papa02,PapaAP02,PapaAM02,padre02@dominio.com,Mama02,MamaAP02,MamaAM02,madre02@dominio.com
+Alumno 03,Papa03,PapaAP03,PapaAM03,,Mama03,MamaAP03,MamaAM03,madre03@dominio.com
+Alumno 04,Papa04,PapaAP04,PapaAM04,,Mama04,MamaAP04,MamaAM04,madre04@dominio.com
+Alumno 05,Papa05,PapaAP05,PapaAM05,padre05@dominio.com,Mama05,MamaAP05,MamaAM05,
+Alumno 06,Papa06,PapaAP06,PapaAM06,padre06@dominio.com,Mama06,MamaAP06,MamaAM06,
+Alumno 07,Papa07,PapaAP07,PapaAM07,padre07@dominio.com,Mama07,MamaAP07,MamaAM07,madre07@dominio.com
+Alumno 08,Papa08,PapaAP08,PapaAM08,padre08@dominio.com,Mama08,MamaAP08,MamaAM08,madre08@dominio.com
+Alumno 09,Papa09,PapaAP09,PapaAM09,padre09@dominio.com,Mama09,MamaAP09,MamaAM09,madre09@dominio.com
+Alumno 10,Papa10,PapaAP10,PapaAM10,padre10@dominio.com,Mama10,MamaAP10,MamaAM10,madre10@dominio.com

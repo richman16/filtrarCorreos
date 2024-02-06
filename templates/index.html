@@ -8,13 +8,21 @@
 </head>
 <body>
     <div class="post-it">
-        <p><strong>Requisitos del CSV:</strong><br> Asegúrate de que el archivo CSV tenga las columnas necesarias: PadreNombre, PadreApellidoP, PadreApellidoM, PadreCorreo, MadreNombre, MadreApellidoP, MadreApellidoM, MadreCorreo.</p>
+        <p><strong>Requisitos del CSV:</strong><br> Asegúrate de que el archivo CSV
+            tenga las columnas necesarias: 
+            <ul>
+                <li>Nombre(s) tutor 1 (Completo)</li>
+                <li>Email tutor 1</li>
+                <li>Nombre(s) tutor 2 (Completo)</li>
+                <li>Email tutor 2</li>
+            </ul>
+        </p>
     </div>
     
     <form action="/procesar" method="post" enctype="multipart/form-data">
         <label for="archivo">Selecciona un archivo CSV:</label>
         <br>
-        <input type="file" name="archivo" accept=".csv" required>
+        <input type="file" name="archivo" accept=".csv,.xls,.xlsx" required>
         <br>
         <button type="submit">Procesar</button>
     </form>

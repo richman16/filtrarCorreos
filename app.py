@@ -20,7 +20,12 @@ def procesar():
 
     # Leer el archivo CSV o Excel
     try:
-        df = pd.read_csv(archivo)  # Cambia a pd.read_excel si es necesario
+        if archivo.filename.endswith('.csv'):
+            df = pd.read_csv(archivo)  # Cambia a pd.read_excel si es necesario
+        elif archivo.filename.endswith(('.xlsx', '.xls')):
+            df = pd.read_excel(archivo)
+        else:
+            return render_template('index.html', mensaje='Formato de archivo no compatible.')
     except pd.errors.EmptyDataError:
         return render_template('index.html', mensaje='El archivo está vacío o no es válido.')
 
@@ -33,6 +38,8 @@ def procesar():
         df_padre = pd.DataFrame()
         df_madre = pd.DataFrame()
 
+        """ 
+        Código generico
         if pd.notna(row['PadreCorreo']):
             # Crear una fila para el Padre
             df_padre = pd.DataFrame({
@@ -49,6 +56,20 @@ def procesar():
                 'PersonaApellidoP': row['MadreApellidoP'],
                 'PersonaApellidoM': row['MadreApellidoM'],
                 'PersonaCorreo': row['MadreCorreo']
+            }, index=[0]) """
+
+        if pd.notna(row['Email tutor 1']):
+            # Crear una fila para el Padre
+            df_padre = pd.DataFrame({
+                'PersonaNombre': row['Nombre(s) tutor 1 (Completo)'],
+                'PersonaCorreo': row['Email tutor 1']
+            }, index=[0])
+
+        if pd.notna(row['Email tutor 2']):
+            # Crear una fila para la Madre
+            df_madre = pd.DataFrame({
+                'PersonaNombre': row['Nombre(s) tutor 2 (Completo)'],
+                'PersonaCorreo': row['Email tutor 2']
             }, index=[0])
 
         # Concatenar las filas en el DataFrame de salida
